@@ -1,9 +1,9 @@
 #include<stdio.h>
-int revNum(int)
+int revNum(int);
 
 int main()
 {
-    printf("%d",& revNum(123));
+    printf("%d",revNum(123));
     printf("\n\n");
     return 0;
 }
