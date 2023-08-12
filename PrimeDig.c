@@ -1,6 +1,7 @@
 #include <stdio.h>
 int isPrime(int);
 int getDigits(int);
+int checkDigits(num);
 int main()
 {
 	int i, n, temp;
@@ -30,17 +31,25 @@ int getDigits(int num)
 	{
 		r = num%10;
 		countDigits++;
-		if(isPrime(r)==0)
+		if(checkDIgit(r)==0)
 		{
 			countPFlag++;
 		}
 		num /= 10;
 	}
-
 	if ((countPFlag == countDigits)&&(countPFlag!=0))
 		return 1;
 	else
 		return 0;
+}
+int checkDIgit(int num)
+{
+	int i, flag =0;
+	if((num == 2)||(num ==3)||(num==5)||(num==7))
+	flag=0;
+	else
+	flag = 1;
+	return flag;
 }
 int isPrime(int num)
 {
