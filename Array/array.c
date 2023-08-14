@@ -1,9 +1,12 @@
 #include <stdio.h>
 int main()
 {
-   int array[10] = {1,2,3,4,5,6,7,8,9,0};
-   int loop;
-   for(loop = 0; loop < 10; loop++)
-      printf("%d ", array[loop]);
-   return 0;
+int a[10];
+int i,rev=0;
+for(i=0;i<10;i++)
+scanf("%d",&a[i]);
+for(i=0;i<10;i++)
+printf("\n%d",a[i]);
+return 0;
 }
+
