@@ -35,9 +35,14 @@ int main(){
                 }
             }
         }
-            if(strcmp(str1,str2)==0){
-            printf("\n angram ");
+        if(strcmp(str1,str2)==0){
+            printf("\n Angram ");
+        }
+        else{
+            printf("\n Not Angram ");
         }
     }
-    printf("\n%s",str1);
+    else{
+        printf("\n Not Angram ");
+    }
 }
