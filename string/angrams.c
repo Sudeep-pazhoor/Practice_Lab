@@ -17,7 +17,7 @@ int main(){
     int len2=strlen(str2);
 
     if(len1==len2){
-        for(i=0;i<len1;i++){
+        for(i=0;i<len1-1;i++){
             for(j=0;j<len1;j++){ 
                 if(str1[i]<str1[j]){
                     s=str1[i];
@@ -26,7 +26,7 @@ int main(){
                 }
             }
         }
-        for(i=0;i<len1;i++){
+        for(i=0;i<len1-1;i++){
             for(j=0;j<len1;j++){ 
                 if(str2[i]<str2[j]){
                     s=str2[i];
@@ -35,12 +35,7 @@ int main(){
                 }
             }
         }
-        for(i=0,i<len1;i++){
-            if(strcmp(str1[i],str2[i])==0){
-                count++;
-            }
-        }
-        if(count==len1){
+            if(strcmp(str1,str2)==0){
             printf("\n angram ");
         }
     }
