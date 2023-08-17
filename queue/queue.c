@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int queue[30],front=-1,max=5,rear=-1;
 void enqueue();
 void dequeue();
@@ -7,18 +6,12 @@ void display();
 
 int main(){
     enqueue(20);
-    display();
-    dequeue();
     enqueue(40);
     enqueue(30);
+    enqueue(50);
+    enqueue(60);
     display();
-    dequeue();
-    display();
-    dequeue();
-    display();
-    dequeue();
-    display();
-    enqueue(20);
+    enqueue(70);
     display();
 }
 
